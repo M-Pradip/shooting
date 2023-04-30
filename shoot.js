@@ -5,14 +5,14 @@ resetButton.addEventListener("click", () => {
 });
 const reloadButton = document.querySelector("#reloadButton");
 const gunsImg = document.querySelector("#guns");
-const reloadSound = new Audio("reload.mp3");
+const reloadSound = new Audio("./assets/audio/reload.mp3");
 
 reloadButton.addEventListener("click", () => {
-  gunsImg.src = "GUNRELOAD.gif";
+  gunsImg.src = "./assets/img/GUNRELOAD.gif";
   reloadSound.play();
 
   setTimeout(() => {
-    gunsImg.src = "akgun.png";
+    gunsImg.src = "./assets/img/akgun.pngak";
   }, 4000);
 });
 
@@ -24,7 +24,7 @@ const boardImage = document.getElementById("board");
 
 // Get the flash image element
 const flashImage = document.getElementById("flash");
-const gunshotSound = new Audio("gunshot.mp3");
+const gunshotSound = new Audio("./assets/audio/gunshot.mp3");
 
 // Add a mousedown event listener to the fire button
 fireButton.addEventListener("mousedown", () => {
@@ -32,7 +32,7 @@ fireButton.addEventListener("mousedown", () => {
   flashImage.style.display = "block";
 
   // Change the board image to boardwithhole.png
-  boardImage.src = "boardwithhole.png";
+  boardImage.src = "./assets/img/boardwithhole.png";
   gunshotSound.play();
 
   // Add a mouseup event listener to the fire button
