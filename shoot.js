@@ -12,7 +12,7 @@ reloadButton.addEventListener("click", () => {
   reloadSound.play();
 
   setTimeout(() => {
-    gunsImg.src = "./assets/img/akgun.pngak";
+    gunsImg.src = "./assets/img/akgun.png";
   }, 4000);
 });
 
