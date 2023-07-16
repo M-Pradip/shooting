@@ -32,7 +32,7 @@ fireButton.addEventListener("mousedown", () => {
   flashImage.style.display = "block";
 
   // Change the board image to boardwithhole.png
-  boardImage.src = "./assets/img/boardwithhole.png";
+  boardImage.src = "./assets/img/boardWithHole.png";
   gunshotSound.play();
 
   // Add a mouseup event listener to the fire button
